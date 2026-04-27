@@ -1,0 +1,16 @@
+:root { --bg: #f0f2f5; --card: #ffffff; --primary: #2563eb; }
+body { font-family: sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+.container { background: var(--card); padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 90%; max-width: 700px; }
+h1 { margin-bottom: 0.5rem; color: #1e293b; }
+.subtitle { color: #64748b; margin-bottom: 2rem; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.input-group { margin-bottom: 1rem; text-align: left; }
+label { display: block; font-size: 0.85rem; color: #475569; margin-bottom: 0.2rem; }
+input { width: 100%; padding: 0.5rem; border: 1px solid #cbd5e1; border-radius: 0.4rem; }
+button { width: 100%; padding: 0.75rem; background: var(--primary); color: white; border: none; border-radius: 0.4rem; cursor: pointer; font-weight: 600; margin-top: 1rem; }
+.traffic-light { background: #334155; padding: 1rem; border-radius: 1rem; width: 60px; margin: 0 auto; }
+.light { width: 40px; height: 40px; border-radius: 50%; margin: 0.5rem auto; background: #1e293b; transition: 0.3s; }
+.light.red.active { background: #ef4444; box-shadow: 0 0 15px #ef4444; }
+.light.amber.active { background: #f59e0b; box-shadow: 0 0 15px #f59e0b; }
+.light.green.active { background: #22c55e; box-shadow: 0 0 15px #22c55e; }
+#timer { font-size: 2.5rem; font-weight: bold; margin-top: 1rem; }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Traffic Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚦 Traffic Optimizer</h1>
+        <p class="subtitle">Mechanical Engineering Project | IRC Standard</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Lane Inputs</h3>
+                <div class="input-group">
+                    <label>Bikes/Scooters</label>
+                    <input type="number" id="bikes" value="40">
+                </div>
+                <div class="input-group">
+                    <label>Auto Rickshaws</label>
+                    <input type="number" id="autos" value="20">
+                </div>
+                <div class="input-group">
+                    <label>Cars/Vans</label>
+                    <input type="number" id="cars" value="15">
+                </div>
+                <div class="input-group">
+                    <label>Buses/Trucks</label>
+                    <input type="number" id="trucks" value="2">
+                </div>
+                <button onclick="getOptimization()">Calculate Timing</button>
+            </div>
+
+            <div class="card">
+                <h3>Signal Status</h3>
+                <div class="traffic-light">
+                    <div id="red" class="light red active"></div>
+                    <div id="amber" class="light amber"></div>
+                    <div id="green" class="light green"></div>
+                </div>
+                <div id="timer">--</div>
+                <p id="pcu-val">PCU: 0.0</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
