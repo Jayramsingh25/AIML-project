@@ -4,7 +4,8 @@ async function getOptimization() {
     const cars = parseInt(document.getElementById('cars').value);
     const trucks = parseInt(document.getElementById('trucks').value);
 
-    const API_URL = "https://your-app-name.onrender.com/predict"; // UPDATE THIS
+    // Change this line to your actual Render URL + /predict
+const API_URL = "https://traffic-light-optimization-jsss.onrender.com/predict"; // UPDATE THIS
 
     try {
         const response = await fetch(API_URL, {
